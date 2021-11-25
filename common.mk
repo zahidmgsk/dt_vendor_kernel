@@ -402,6 +402,13 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.2 \
     android.hardware.power@1.2.vendor
 
+# Prebuilts
+PRODUCT_PACKAGES += \
+    OnePlusGallery
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/etc/permissions/privapp-permissions-oem-system.xml:system/etc/permissions/privapp-permissions-oem.xml
+
 # Pixel Offline charger
 PRODUCT_PACKAGES += \
     charger_res_images \
